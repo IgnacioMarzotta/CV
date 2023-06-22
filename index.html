@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Inspiration https://dribbble.com/shots/1141520-PSD-CV-template?list=searches&offset=17 -->    
+        <title>Ignacio Marzotta's CV</title>
+        <meta charset="utf-8">
+        <!-- LOCAL -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/scroll_bar.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/timeline.css">
+        <script src="vendor/jquery/jquery-3.7.0.min.js"></script>
+        <!-- Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic">
+        <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="main_container">
+            <!-- HEADER -->
+            <div id="header">
+                <!-- LOGOTYPE/NAME -->
+                <div class="header_logotype_container">
+                    <h1 class="logotype_name purple">Ignacio<br>Marzotta</h1>
+                    <h2 class="logotype_occupation">Software Developer and tech enthusiast</h2>
+                </div>
+                <!-- MAIN MENU -->
+                <div class="header_menu_container">
+                    <ul class="download_print_buttons horizontal_list">
+                        <li><a href="#">↓ Download</a></li>
+                    </ul>
+
+                    <ul class="download_print_buttons horizontal_list">
+                        <li><a href="index.html"><img src="img/spain.jpg" alt="" class="header-flag"></a></li>
+                        <li><a href="index_en.html"><img src="img/uk.png" alt="" class="header-flag"></a></li>
+                    </ul>
+
+                    <div class="clear"></div>
+                    <ul class="header_menu horizontal_list panelNav" data-panelwrapper="panelWrapper1" id="main_header_menu">
+                        <li><a class="no_border menuActive" href="#panelIndex">Profile</a></li>
+                        <li><a href="#panelEducation">Education</a></li>
+                        <li><a href="#panelSkills">Skills</a></li>
+                        <li><a href="#panelExperience">Experience</a></li>
+                        <li><a href="#panelProjects">Featured Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LEFT COL -->
+            <div id="left_col">
+                <div class="profile_frame">
+                    <div class="profile_picture"></div>
+                    <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
+                </div>
+                <div class="hello_content">
+                    <h2>About me</h2>
+                    <p>From videogaming and computer building to programming and engineering, I've always been very passionate about computers and technology.</p>
+                </div>
+                <div class="contact_details_content">
+                    <h2>Contact details</h2>
+                    <p class="purple">Phone:</p>
+                    <p>+56 9 7540 7567</p>
+                    <p class="purple">Email:</p>
+                    <p>ignaciomarzotta@gmail.com</p>
+                </div>
+                <a href="mailto:ignaciomarzotta@gmail.com" class="send_message_button" target="_blank">
+                    <span class="cut1"></span>
+                    <span class="cut2"></span>
+                    <span class="content">Send me an e-mail <span class="fontawesome-double-angle-right"></span></span>
+                </a>
+            </div>
+
+            <!-- PROFILE CONTENT -->
+            <div id="right_col">
+                
+                <div class="panelWrapper" id="panelWrapper1" data-enter="fade" data-exit="fade" data-sequential="yes">
+
+                    <div class="panel current" id="panelIndex">
+                        <div class="block">
+                            <h1>Profile</h1>
+                            <blockquote class="profile_quote">
+                                <p>"The future is not something which happens by just waiting for time to pass. And if you want to be assured of a life after death, you have to build it yourself."</p>
+                                <p>Sam Hughes</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+                        </div>
+                        <div class="block">
+                            <h2>A few words about me</h2>
+                            <p>Since I was little, I have always found deep interest in the field of computers and programming. Coming from a background of playing around with beginner tools such as Wix and Construct2, learning how to code opened my mind to endless possibilities and a new way to appreciate the world and technology around me, giving me a new way to free my imagination.</p>
+                        </div>
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        <div class="block">
+                            <h2>Philosophy</h2>
+                            <p>I fully believe in the idea of selflessness and caring for each other without expecting anything in return.</p>
+                            <div class="philosophy_content">
+                                <p>I believe that happiness and joy comes from not only succeeding, but helping those around you achieve their goals. Sometimes even the smallest of actions can drastically change someone else, and doing something positive for them without expecting anything in return is, in my opinion, one of the most pure acts of humanity. <br> My most outstanding moral values:</p>
+                                <ul>
+                                    <li>Disciplined</li>
+                                    <li>Open-minded</li>
+                                    <li>Honest</li>
+                                    <li>Respectful</li>
+                                    <li>Fast learner</li>
+                                    <li>Creative</li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        <div class="last block">
+                            <h2>Interests & Hobbies</h2>
+                            <p>My interest in computers and electronics have always played a huge part in defining my hobbies and interets:</p>
+                            <ul>
+                                <li>Computer Gamming</li>
+                                <li>Web Developing</li>
+                                <li>Biking</li>
+                                <li>Virtual Reality</li>
+                                <li>Manga and Anime</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" id="panelEducation">
+                        <div class="block">
+                            <div class="vtl">
+            
+                                <div class="event">
+                                    <p class="date">2020 - 2024</p>
+                                    <a href="https://www.unab.cl/">
+                                        <img src="img/unab.png" style="float: left; margin-top: auto;margin-right:10px; margin-bottom: auto; max-height: 48px;max-width: 48px;"/>
+                                    </a>
+                                    <h1>College education</h1>
+                                    <h4>Computer and Informatics engineer</h4>
+                                    <p class="txt">Graduated from "Andres Bello University" in Santiago, Chile with the 4-year engineering degree of Computer and Informatics engineer.</p>
+                                    <img data-enlargable src="img/Certs/CertificadoDL-FullStackDeveloper.png" class="certificate-img"/>
+                                </div>
+            
+                                <div class="event">
+                                    <h1>Higher education</h1>
+                                    <h4>Completed courses and degrees in the field of computers and electronics.</h4>
+                                    <br>
+                                    
+                                    <p class="txt certificate-title">Full-stack Web Development - RubyOnRails</p>
+                                    <img data-enlargable src="img/Certs/CertificadoDL-FullStackDeveloper.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Videogame development - Unity</p>
+                                    <img data-enlargable src="img/Certs/CertificadoDL-GameDeveloper.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Tools for Data Management and analysis</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-HerramientasDeGestion.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Accelerating Deep Learning with GPUs</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-AcceleratingDeepLearningWithGPUs.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Introduction to Big Data</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-BigData101.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Blockchain Essentials</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-BlockchainEssentials.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Data Analysis with Python</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-DataAnalysisWithPython.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Data Visualization with Python</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-DataVisualizationWithPython.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Deep Learning Fundamentals</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-DeepLearningFundamentals.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Deep Learning with TensorFlow</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-DeepLearningWithTensorFlow.png" class="certificate-img"/>
+                                    
+                                    <p class="txt certificate-title">Introduction to Hadoop</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-Hadoop101.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Introduction to Cloud Computing</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-IntroductionToCloud.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Machine Learning with Python</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-MachineLearningWithPython.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Python for Data Science</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-PythonForDataScience.png" class="certificate-img"/>
+            
+                                    <p class="txt certificate-title">Spark Fundamentals</p>
+                                    <img data-enlargable src="img/Certs/CertificadoIBM-SparkFundamentals1.png" class="certificate-img"/>
+                                </div>
+            
+                                <div class="event">
+                                    <p class="date">2015 - 2018</p>
+                                    <h1>High School Education</h1>
+                                    <h4>Completed all 4 years of high school education at San Juan De Las Condes private school in Santiago, Chile.</h2>
+                                </div>
+            
+                                <div class="event">
+                                    <p class="date">2006 - 2014</p>
+                                    <h1>Middle and Elementary Education</h1>
+                                    <h4>Completed all 8 years of elementary and middle school education at both Dante Allighieri private school in Rosario, Argentina and San Juan de Las Condes private school in Santiago, Chile.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel" id="panelSkills">
+                        <div class="block">
+                            <h1>Computer Science</h1>
+                            
+                            <img src="img/Logos/c.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/cpp.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/cs.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/py.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/java.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/prolog.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/git.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                        </div>
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        <div class="block">
+                            <h1>Web Development</h1>
+                            
+                            <img src="img/Logos/rails.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>More than 4 years of experience using a mix of RubyOnRails with Amazon Web Service on production. From API integration to synchronous livestream transmission and live maintenance cycle.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/react.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/angular.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/aws.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>More than 4 years using AWS resources such as EC2, EBS, S3 and Route53 with RubyOnRails. </p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/frontend.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam porro pariatur tenetur facilis rerum ab reiciendis ad sunt, reprehenderit velit. Dignissimos iusto vero inventore quidem, cupiditate repellat accusantium debitis?</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                        </div>
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        <div class="block">
+                            <h1>Videogame Development</h1>
+                            
+                            <img src="img/Logos/unity.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Advanced certified knowledge and experience with the Unity engine, ranging from rendering units, API connection and scripting, to tools such as Cinemachine.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/blender.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Basic knowledge on 3D modelling with Blender.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                        </div>
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        <div class="last block">
+                            <h1>Others</h1>
+
+                            <img src="img/Logos/cisco.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Advanced knowledge of Cisco Packet Tracer and networking concepts such as, but not limited to: DHCP, VLAN, Transport protocols, P2P Model, IPv4 & IPv6, OSI Model Layers, Routing algorithms, etc.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/office.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>Advanced knowledge of Office tools, including Word, PowerPoint, Excel, Access, Publisher and more.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+
+                            <img src="img/Logos/linux.png" alt="" style="width: 58px; height: 58px; float: left;">
+                            <blockquote class="skills_quote">
+                                <p>General knowledge of the Linux enviroment.</p>
+                                <span class="entypo-quote"></span>
+                            </blockquote>
+                        </div>
+
+                    </div>
+
+                    <div class="panel" id="panelExperience">
+                        <div class="block">
+                            <div class="vtl">
+                                <h2 style="text-align: center;">My most notable experiences in the field of computers and coding.</h2>
+                                <div class="event">
+                                    <p class="date">2019 - 2022</p>
+                                    <div>
+                                        <img data-enlargable src="img/4coigues_logo.png" class="logo"/>
+                                        <h1>Cuatro Coigües</h1>
+                                    </div>
+                                    <h4>Small business from southern Chile, focused on the production and sale of "chilote" black garlic.</h2>
+                                    <p class="txt">Lead developer for the official Cuatro Coigües website. Built with responsiveness and user experience in mind, the website includes hand-crafted features such as:</p>
+                                    <ul>
+                                        <li>E-Commerce</li>
+                                        <li>Order Management</li>
+                                        <li>Recipe viewer</li>
+                                        <li>Administrator panel</li>
+                                        <li>Analytics system</li>
+                                        <li>Internationalization</li>
+                                        <li>Subscription system</li>
+                                    </ul>
+                                    <p class="txt">Some of the technologies used during the development and deployment of the website include:</p>
+                                    <ul>
+                                        <li>Ruby On Rails</li>
+                                        <li>Amazon Web Services (AWS)</li>
+                                        <li>Puma</li>
+                                        <li>PostgreSQL</li>
+                                        <li>jQuery</li>
+                                        <li>Webpacker</li>
+                                        <li>i18n Internationalization</li>
+                                        <li>Bootstrap</li>
+                                        <li>Flow payment processing API</li>
+                                        <li>Mailchimp Mailing API</li>
+                                    </ul>
+                                    <p class="txt">Was in charge of tasks such as: Main Project Manager, Back-end developer, Front-end developer, Analyst, DevOps Manager, Database manager, UX/UI designer (partially) and Quality tester.</p>
+                                    <br>
+                                    <img data-enlargable src="img/4coigues_index.png" class="experience-img"/>
+                                    <img data-enlargable src="img/4coigues_recipes.png" class="experience-img"/>
+                                    <img data-enlargable src="img/4coigues_nosotros.png" class="experience-img"/>
+                                    <img data-enlargable src="img/4coigues_benefits.png" class="experience-img"/>
+                                </div>
+                                <div class="event">
+                                    <p class="date">2017 - 2019</p>
+                                    <div>
+                                        <img data-enlargable src="img/salpbya.png" class="logo"/>
+                                        <img data-enlargable src="img/ISEME.png" style="float: right; width: 62px; height: 42px;"/>
+                                        <h1>SALPBYA</h1>
+                                    </div>
+                                    <h4>Sociedad Argentina de Licenciados en Produccion de Bioimagenes y Afines</h2>
+                                    <p class="txt">Lead designer and developer for both website and promotional material. Built using Wix, the responsive website included features such as a repertory of upcoming radiology courses with the ability to sign up/enroll.</p>
+                                    <br>
+                                    <img data-enlargable src="img/flyer.png" class="experience-img"/>
+                                    <img data-enlargable src="img/flyer2.png" class="experience-img"/>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="panel" id="panelProjects">
+                        <div class="block">
+                            <h1>Computer Science</h1>
+                            <h2>GUIs and MVC Pattern (Java)</h2>
+                            <p>Second project for the programming paradigms course. Includes implementation of Swing and AWT for GUIs and multiple classes for MVC pattern.</p>
+                            <a href="https://github.com/IgnacioMarzotta/Java_GUIs_using_MVC">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <h2>Written Test Generator (C++)</h2>
+                            <p>First assignment for the programming paradigms course. Uses Bloom's taxonomy to generate Lorem Ipsum questions with varying format.</p>
+                            <a href="https://github.com/IgnacioMarzotta/CPP_Test_Generator">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <h2>Morse Code Translator (C)</h2>
+                            <p>Third university project for the Algorithms and Data Structures subject. Makes use of Binary Trees and Dynamic Lists, with the purpose of receiving a text file and translating it into natural comprehensible text and viceversa.</p>
+                            <a href="https://github.com/IgnacioMarzotta/C-Morse_Translator">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <h2>Subway Network Manager (C)</h2>
+                            <p>Second university project for the Algorithms and Data Structures subject. Using graphs, the receives a file detailing subway stations and their connections, offering functions such as using Djikstra's algorithm to calculate the shortest route between two stations, being able to return the subway stations in order and total distance. Also includes the ability to offer an alternative route in case any station is non-operational.</p>
+                            <a href="https://github.com/IgnacioMarzotta/C-Santiago_Subway_GPS">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <h2>DNA Mutation Detector (C)</h2>
+                            <p>First university project for the Algorithms and Data Structures subject. Using dynamic lists, the code receives a text file with a DNA strand/string, where different checks are applied to determine if the given DNA is normal or mutant.</p>
+                            <a href="https://github.com/IgnacioMarzotta/C-Mutant_DNA_Check">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <h2>Minesweeper pt.2 (Python)</h2>
+                            <p>Second university project for the Python Programming subject. Has the same base as the first project, with a dynamic canvas size and the ability to print the results to a text file.</p>
+                            <a href="https://github.com/IgnacioMarzotta/Python-Minesweeper-v2">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <h2>Minesweeper pt.1 (Python)</h2>
+                            <p>First university project for the Python Programming subject. Uses various programming techniques to recreate a version of the classic Minesweeper game. Requires the user to input bomb locations, and recurrently asks to select a position to reveal.</p>
+                            <a href="https://github.com/IgnacioMarzotta/Python-Minesweeper-v1">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        
+                        <div class="block">
+                            <h1>Web Development</h1>
+                            <h2>Cuatro Coigues (RubyOnRails)</h2>
+                            <p>Source code of outdated version of the production webapp used for the deployment of Cuatro Coigues. Refer to "Experiences" for more details.</p>
+                            <a href="https://github.com/IgnacioMarzotta/Cuatro-Coigues">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h2>MyOwnSpace (RubyOnRails)</h2>
+                            <p>Final project for "Full-Stack Web Development" bootcamp. Webapp that includes a dynamic calendar, secure note and encrypted password storage.</p>
+                            <a href="https://github.com/IgnacioMarzotta/MyOwnSpace">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h2>ACHS Platform (RubyOnRails)</h2>
+                            <p>Webapp created in less than 24 hours using Rails for Microsoft's 2019 Santiago Hackathon in the name of ACHS (Chilean Security Association), which consists of a social media-type website including security functions for workers.</p>
+                            <a href="https://github.com/IgnacioMarzotta/webapp_achs">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="horizontal_line">
+                            <div class="line_left"></div>
+                            <div class="left_circle"></div>
+                            <div class="central_circle"></div>
+                            <div class="right_circle"></div>
+                            <div class="line_right"></div>
+                        </div>
+                        
+                        <div class="last block">
+                            <h1>Videogame Development</h1>
+                            <h2>Star Wars: Galaxy Defender (Unity/C#)</h2>
+                            <p>Final project for the Unity Game Development course. Fan-made 3D Space shooter as a love letter to the Star Wars franchise, based on games such as X-Wing Squadron and Star Wars Battlefront, this experience offers features such as a gallery, abilites with cooldown, different camera modes, dialogues and missions. Mostly all models, sound, art and resources belong to the official brand and are in no way monetized in this project, just a fan-made.</p>
+                            <img src="img/GalaxyLogo.png" alt="" style="max-width: 500px; max-height: 250px;">
+                            <video autoplay preload width="450" height="260" controls>
+                                <source src="img/GalaxyGameplay.mp4" type="video/mp4"/>
+                            </video>
+                            <a href="https://github.com/IgnacioMarzotta/StarWars-GalaxyDefender">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h2>Tales of a Swordsman (Unity/C#)</h2>
+                            <p>First project for the Unity Game Development course. Basic 2D platformer to grasp the concepts of Unity and C# programming, developed in 1 week. </p>
+                            <img src="img/TalesLogo.png" alt="" style="max-width: 500px; max-height: 250px;">
+                            <video autoplay preload width="450" height="260" controls>
+                                <source src="img/TalesGameplay.mp4" type="video/mp4"/>
+                            </video>
+                            <a href="https://github.com/IgnacioMarzotta/TalesOfASwordsman">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h2>Ultra Cooking Legacy (Unity/C#)</h2>
+                            <p>Main university project for the Topics of specialty in Computing subject. Team effort to deliver a unique experience for the platformer genre. Includes features such as database integration for user creation and data storage, diverse levels and an enticing story. Developed to run in WebGL on any browser. </p>
+                            <video autoplay preload width="450" height="260">
+                                <source src="img/UltraCookingLogo.mp4" type="video/mp4"/>
+                            </video>
+                            <video autoplay preload width="450" height="260" controls>
+                                <source src="img/UltraCookingGameplay.mp4" type="video/mp4"/>
+                            </video>
+                            <a href="https://github.com/IgnacioMarzotta/UltraCookingLegacyEpsilon">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            View Code on Github
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h2>Hot Jump (Unity/C#)</h2>
+                            <p>Assisted on the development of the mobile game "Hot Jump", developed by 12K Studios. A simple yet entertaining platformer with an evolving enviroment, diverse character skins with integrated microtransactions, online leaderboard and progression system.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.CuartoPiso.HotJump&hl=es_419&gl=US">
+                                <div class="button-container button-flip3d-vertical1">
+                                    <div class="flipper flipper-flip3d-vertical1">
+                                        <div class="button button-3d front">
+                                            Get on Android
+                                        </div>
+                                        <div class="button back">
+                                            <i class="fab fa-google-play"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/panels.js"></script>
+        <script src="js/maximize.js"></script>
+    </body>
+</html>

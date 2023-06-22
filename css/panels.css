@@ -1,0 +1,239 @@
+.panel {
+    position: absolute;
+    min-height: 734px; 
+    width: 639px; 
+    float: left;
+    /*
+    Prevent flickering of the screen when starting an animation
+    @url http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
+    */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Panel colors */
+  #panelA1, #panelA2, #panelA3, #panelA4, #panelA5, #panelA6, #panelA7 { background: #F00; }
+  #panelB1, #panelB2, #panelB3, #panelB4, #panelB5, #panelB6, #panelB7   { background: #0F0; }
+  #panelC1, #panelC2, #panelC3, #panelC4, #panelC5, #panelC6, #panelC7   { background: #00F; }
+  
+  
+  /*
+  A panel can be in one of the following states:
+  - [default],
+  - current (= the current active panel),
+  - exit (= the panel to slide/fade out),
+  - enter (= the panel to slide/fade in)
+  
+  All [default] panels are hidden.
+  Above that we make sure the current panel is on top of the other panels
+  */
+  .panel { z-index: -1; display: none; }
+  .panel.current, .panel.exit { z-index: 2; display: block; }
+  .panel.enter { display: block; }
+  
+  
+  /*
+  The key aspect in this example is the `.animating` class on the wrapper: only if the wrapper has the .animating class, CSS properties are transitioned.
+  
+  This allows us to set starting positions without any transition, and then - once `.animating` is in place transition to the end position.
+  */
+  .animating .exit,
+  .animating .enter {
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  /*
+  What follows now are all transition start and end states. Names are re-used for both entering and exiting effects.
+  
+  Note that some effects are aliases. Entering stage left (= from the left hand side of "the stage" (wrapper)) is the same as sliding in to the right.
+  */
+  
+  
+  /* SLIDE OUT TRANSITIONS */
+  .exit.stageback,
+  .exit.stagetop,
+  .exit.slideup {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .animating .exit.stageback,
+  .animating .exit.stagetop,
+  .animating .exit.slideup {
+        -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  
+  .exit.stagefront,
+  .exit.stagebottom,
+  .exit.slidedown {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .animating .exit.stagefront,
+  .animating .exit.stagebottom,
+  .animating .exit.slidedown {
+        -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  
+  .exit.stageleft,
+  .exit.slideleft {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .animating .exit.stageleft,
+  .animating .exit.slideleft {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  
+  .exit.stageright,
+  .exit.slideright {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .animating .exit.stageright,
+  .animating .exit.slideright {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  
+  
+  /* SLIDE IN TRANSITIONS */
+  .enter.stageback,
+  .enter.stagetop,
+  .enter.slidedown {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .animating .enter.stageback,
+  .animating .enter.stagetop,
+  .animating .enter.slidedown {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  .enter.stagefront,
+  .enter.stagebottom,
+  .enter.slideup {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .animating .enter.stagefront,
+  .animating .enter.stagebottom,
+  .animating .enter.slideup {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  .enter.stageleft,
+  .enter.slideright {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .animating .enter.stageleft,
+  .animating .enter.slideright {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  
+  .enter.stageright,
+  .enter.slideleft {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .animating .enter.stageright,
+  .animating .enter.slideleft {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  
+  
+  
+  /* SCALE TRANSITIONS, BEST TO COBMINE WITH FADE/OPACITY */
+  .enter.scaleup {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  .animating .enter.scaleup {
+        -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .exit.scaleup {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .animating .exit.scaleup {
+        -webkit-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    transform: scale(1.9);
+    opacity: 0;
+  }
+  
+  .enter.scaledown {
+    -webkit-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    transform: scale(1.9);
+  }
+  .animating .enter.scaledown {
+        -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .exit.scaledown {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .animating .exit.scaledown {
+        -webkit-transform: scale(0.01);
+    -ms-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+  
+  
+  /* OPACITY/FADE TRANSITIONS */
+  .enter.fade {
+    opacity: 0;
+  }
+  .animating .enter.fade {
+    opacity: 1;
+  }
+  .exit.fade {
+    opacity: 1;
+  }
+  .animating .exit.fade {
+    opacity: 0;
+  }
+  
+  
+  /* Sequential animations: delay the animation of the entering panel */
+  .animating[data-concurrent="no"] .panel.enter,
+  .animating[data-sequential="yes"] .panel.enter{
+    -webkit-transition-delay: .3s !important;
+    -ms-transition-delay: .3s !important;
+    transition-delay: .3s !important;
+  }
