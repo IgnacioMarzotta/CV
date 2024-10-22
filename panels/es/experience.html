@@ -1,7 +1,7 @@
 <div class="block">
     <div class="vtl">
         <div class="event">
-            <p class="date">2019 - 2022</p>
+            <p class="date">Sep 2019 - Abr 2022</p>
             <div>
                 <img data-enlargable src="img/4coigues_logo.png" class="logo"/>
                 <h1>Cuatro Coigües</h1>
@@ -41,3 +41,30 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Seleccionamos todas las imágenes con la clase 'zoomable'
+    const imagenes = document.querySelectorAll('.experience-img');
+
+    // Función para maximizar la imagen
+    function maximizarImagen(imagen) {
+        imagen.classList.add('maximized');
+    }
+
+    // Función para restaurar la imagen
+    function restaurarImagen(imagen) {
+        imagen.classList.remove('maximized');
+    }
+
+    // Añadimos el evento de clic para maximizar al hacer clic en la imagen
+    imagenes.forEach(imagen => {
+        imagen.addEventListener('click', () => {
+            console.log("aaaaaa");
+            if (imagen.classList.contains('maximized')) {
+                restaurarImagen(imagen);
+            } else {
+                maximizarImagen(imagen);
+            }
+        });
+    });
+</script>

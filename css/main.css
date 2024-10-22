@@ -29,8 +29,8 @@
 }
 .experience-img:hover
 {
-    max-width: 104px;
-    max-height: 168px;
+    max-width: 50%;
+    max-height: 50%;
     transition: .3s;
 }
 
