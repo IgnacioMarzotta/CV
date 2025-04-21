@@ -79,7 +79,7 @@
                     <p class="purple">English</p>
                     <p>C2 - Semi-native</p>
                     <p class="purple">Mandarin chinese</p>
-                    <p>Basic</p>
+                    <p>Basic - Learning</p>
                 </div>
                 <div class="contact_details_content">
                     <h2>Contact details</h2>
@@ -129,5 +129,25 @@
                 return new bootstrap.Popover(popoverTriggerEl)
             })
         </script>
+
+        <script>
+            const images = document.querySelectorAll('.experience-img');
+            function maximizeImage(image) {
+                image.classList.add('maximized');
+            }
+            function restoreImage(image) {
+                image.classList.remove('maximized');
+            }
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    if (image.classList.contains('maximized')) {
+                        restoreImage(image);
+                    } else {
+                        maximizeImage(image);
+                    }
+                });
+            });
+        </script>
+
     </body>
 </html>

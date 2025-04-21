@@ -79,7 +79,7 @@
                     <p class="purple">Inglés</p>
                     <p>C2 - Semi-nativo</p>
                     <p class="purple">Chino mandarín</p>
-                    <p>Básico</p>
+                    <p>Básico - Aprendiendo</p>
                 </div>
                 <div class="contact_details_content">
                     <h2>Detalles de contacto</h2>
@@ -128,6 +128,25 @@
             var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
                 return new bootstrap.Popover(popoverTriggerEl)
             })
+        </script>
+
+        <script>
+            const images = document.querySelectorAll('.experience-img');
+            function maximizeImage(image) {
+                image.classList.add('maximized');
+            }
+            function restoreImage(image) {
+                image.classList.remove('maximized');
+            }
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    if (image.classList.contains('maximized')) {
+                        restoreImage(image);
+                    } else {
+                        maximizeImage(image);
+                    }
+                });
+            });
         </script>
 
     </body>

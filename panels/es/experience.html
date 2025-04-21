@@ -58,29 +58,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    // Seleccionamos todas las imágenes con la clase 'zoomable'
-    const images = document.querySelectorAll('.experience-img');
-
-    // Función para maximizar la imagen
-    function maximizeImage(image) {
-        image.classList.add('maximized');
-    }
-
-    // Función para restaurar la image
-    function restoreImage(image) {
-        image.classList.remove('maximized');
-    }
-
-    // Añadimos el evento de clic para maximizar al hacer clic en la image
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            if (image.classList.contains('maximized')) {
-                restoreImage(image);
-            } else {
-                maximizeImage(image);
-            }
-        });
-    });
-</script>
