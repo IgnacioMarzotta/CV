@@ -1,12 +1,29 @@
 <div class="block">
     <div class="vtl">
         <div class="event">
+            <p class="date">Nov 2024 - Abr 2025</p>
+            <div>
+                <img data-enlargable src="img/forcast_logo.jpeg" class="logo forcast"/>
+                <h1>Forcast.</h1>
+            </div>
+            <h4>Consultora de servicios TI especializados en la implementación de tecnologías Web3.</h4>
+            <p class="txt">Para esta <b>práctica laboral de Ingeniería</b>, se desempeñaron las siguientes tareas:</p>
+            <p class="txt">Participación en el desarrollo de proyectos utilizando metodologías ágiles, con un enfoque en la creación y optimización de sistemas escalables. En el área de back-end, se implementaron y optimizaron bases de datos, asegurando una estructura eficiente y segura. Se desarrollaron y mantuvieron sistemas CRUD para la gestión de información, además de modernizar servicios para mejorar el rendimiento y la estabilidad de la plataforma. También se trabajó en la integración de tecnologías Web3, permitiendo la interacción con la blockchain y la ejecución de transacciones descentralizadas, asegurando la integridad de los datos mediante validaciones y mecanismos de seguridad.</p>
+            <p class="txt">En el desarrollo front-end, se implementaron interfaces dinámicas y responsivas, alineadas con principios de usabilidad y experiencia de usuario. Se integraron smart contracts para conectar la aplicación con la blockchain, garantizando una comunicación fluida entre el sistema y los servicios descentralizados, entre los más destacables se encuentras los sistemas de "staking" y de compra de tokens.</p>
+            <p class="txt">Una de las características principales fue cementar las bases del sistema de "multi-login", donde se re-estructuró algunos sistemas de usuario pre-existentes, donde se agregó usuarios de tipo invitado y Web2 a los Web3 ya existentes. Esto consistió de la implementación de diversas técnicas, como el protocolo EIP-6963 para detección de providers, y mucho más. </p>
+            <p class="txt">El trabajo incluyó la aplicación de pruebas unitarias e integración para asegurar la estabilidad del sistema, así como la resolución de errores en distintos entornos de desarrollo y producción. Se realizaron análisis y solución de conflictos en procesos de integración continua, optimizando los flujos de despliegue y mantenimiento en producción.</p>
+            <p class="txt">En un entorno colaborativo, se trabajó en estrecha coordinación con equipos multidisciplinarios, participando en reuniones de planificación y seguimiento bajo metodologías ágiles. Se documentaron procesos y flujos de trabajo, facilitando la escalabilidad y evolución del proyecto. Además, se trabajó en la optimización del rendimiento, mejorando la interacción con los usuarios mediante la implementación de filtros, paginación y sistemas de búsqueda avanzados.</p>
+            <p class="txt"><i>A solicitud de la empresa, no se hace mención específica de las tecnologías implementadas.</i></p>
+            <hr>
+            <h4>Referencia:</h4><p><i>Oscar Castillo | Director de proyecto | oscar.castillo @ forcast.tech</i></p>
+        </div>
+        <div class="event">
             <p class="date">Sep 2019 - Abr 2022</p>
             <div>
                 <img data-enlargable src="img/4coigues_logo.png" class="logo"/>
                 <h1>Cuatro Coigües</h1>
             </div>
-            <h4>Negocio emergente del sur chileno, centrado en la producción y venta de ajo negro "chilote".</h2>
+            <h4>Negocio emergente del sur chileno, centrado en la producción y venta de ajo negro "chilote".</h4>
             <p class="txt">Desempeñé el rol de desarrollador principal del sitio oficial de Cuatro Coigües. Creado con responsividad y experiencia de usuario como principales objetivos, el sitio incluye características como:</p>
             <ul>
                 <li>Servicio de E-Commerce</li>
@@ -37,33 +54,32 @@
             <img data-enlargable src="img/4coigues_nosotros.png" class="experience-img"/>
             <img data-enlargable src="img/4coigues_benefits.png" class="experience-img"/>
             <hr>
-            <h4>Reference:</h4><p><i>Martín Donetch | Jefe de Ventas | +56 9 8819 6596  martin.donetch@gmail.com</i></p>
+            <h4>Referencia:</h4><p><i>Martín Donetch | Jefe de Ventas | +56 9 8819 6596  martin.donetch@gmail.com</i></p>
         </div>
     </div>
 </div>
 
 <script>
     // Seleccionamos todas las imágenes con la clase 'zoomable'
-    const imagenes = document.querySelectorAll('.experience-img');
+    const images = document.querySelectorAll('.experience-img');
 
     // Función para maximizar la imagen
-    function maximizarImagen(imagen) {
-        imagen.classList.add('maximized');
+    function maximizeImage(image) {
+        image.classList.add('maximized');
     }
 
-    // Función para restaurar la imagen
-    function restaurarImagen(imagen) {
-        imagen.classList.remove('maximized');
+    // Función para restaurar la image
+    function restoreImage(image) {
+        image.classList.remove('maximized');
     }
 
-    // Añadimos el evento de clic para maximizar al hacer clic en la imagen
-    imagenes.forEach(imagen => {
-        imagen.addEventListener('click', () => {
-            console.log("aaaaaa");
-            if (imagen.classList.contains('maximized')) {
-                restaurarImagen(imagen);
+    // Añadimos el evento de clic para maximizar al hacer clic en la image
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            if (image.classList.contains('maximized')) {
+                restoreImage(image);
             } else {
-                maximizarImagen(imagen);
+                maximizeImage(image);
             }
         });
     });
