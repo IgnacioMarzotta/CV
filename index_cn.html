@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Inspiration https://dribbble.com/shots/1141520-PSD-CV-template?list=searches&offset=17 -->
+        <title>Ignacio Marzotta's CV</title>
+        <meta charset="utf-8">
+        <!-- LOCAL -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/scroll_bar.css">
+        <link rel="stylesheet" href="css/panels.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/timeline.css">
+
+        <link rel="stylesheet" href="vendor/popperjs/popper.css">
+
+        <script src="vendor/jquery/jquery-3.7.0.min.js"></script>
+        <script src="vendor/popperjs/popper.min.js"></script>
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        
+        <!-- Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic">
+        <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+        <script>
+            $(function () {
+                var includes = $('[data-translate]')
+                $.each(includes, function () {
+                    var file = 'panels/cn/' + $(this).data('translate') + '.html'
+                    $(this).load(file)
+                })
+            })
+        </script>
+    </head>
+    
+    <body>
+        <div id="main_container">
+            <!-- HEADER -->
+            <div id="header">
+                <!-- LOGOTYPE/NAME -->
+                <div class="header_logotype_container">
+                    <h1 class="logotype_name">Ignacio<br>Marzotta</h1>
+                    <h2 class="logotype_occupation">工程师和软件开发人员</h2>
+                </div>
+                <!-- MAIN MENU -->
+                <div class="header_menu_container">
+                    <ul class="download_print_buttons horizontal_list">
+                        <li><a href="./Cv.pdf" target="_blank">↓ 下载</a></li>
+                    </ul>
+
+                    <ul class="download_print_buttons horizontal_list">
+                        <li><a href="index.html"><img src="img/spain.jpg" alt="" class="header-flag"></a></li>
+                        <li><a href="index_en.html"><img src="img/uk.png" alt="" class="header-flag"></a></li>
+                        <li><a href="index_cn.html"><img src="img/china.png" alt="" class="header-flag"></a></li>
+                    </ul>
+
+                    <div class="clear"></div>
+                    <ul class="header_menu horizontal_list panelNav" data-panelwrapper="panelWrapper1" id="main_header_menu">
+                        <li><a class="no_border menuActive" href="#panelIndex">轮廓</a></li>
+                        <li><a href="#panelEducation">教育</a></li>
+                        <li><a href="#panelSkills">技能</a></li>
+                        <li><a href="#panelExperience">经验</a></li>
+                        <li><a href="#panelProjects">项目</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LEFT COL -->
+            <div id="left_col">
+                <div class="profile_frame">
+                    <div class="profile_picture"></div>
+                </div>
+                <div class="hello_content">
+                    <h2>关于我</h2>
+                    <p>从视频游戏到编程，我一直对计算和技术充满热情</p>
+                </div>
+                <div class="contact_details_content">
+                    <h2>语言</h2>
+                    <p class="purple">西班牙语</p>
+                    <p>本国的</p>
+                    <p class="purple">英语</p>
+                    <p>C2 - 半本地</p>
+                    <p class="purple">普通话</p>
+                    <p>基础 - 学习</p>
+                </div>
+                <div class="contact_details_content">
+                    <h2>联系方式</h2>
+                    <p class="purple">电话:</p>
+                    <p>+56 9 7540 7567</p>
+                    <p class="purple">电子邮件:</p>
+                    <p>ignaciomarzotta <br> @gmail.com</p>
+                </div>
+                <a href="mailto:ignaciomarzotta@gmail.com" class="send_message_button" target="_blank">
+                    <span class="cut1"></span>
+                    <span class="cut2"></span>
+                    <span class="content">给我发电子邮件 <span class="fontawesome-double-angle-right"></span></span>
+                </a>
+            </div>
+
+            <!-- PROFILE CONTENT -->
+            <div id="right_col">
+                
+                <div class="panelWrapper" id="panelWrapper1" data-enter="fade" data-exit="fade" data-sequential="yes">
+
+                    <div class="panel current" id="panelIndex" data-translate="about">
+                    </div>
+
+                    <div class="panel" id="panelEducation" data-translate="education">
+                    </div>
+
+                    <div class="panel" id="panelSkills" data-translate="skills">
+                    </div>
+
+                    <div class="panel" id="panelExperience" data-translate="experience">
+                    </div>
+
+                    <div class="panel" id="panelProjects" data-translate="projects">                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/panels.js"></script>
+
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+
+        <script>
+            const images = document.querySelectorAll('.experience-img');
+            function maximizeImage(image) {
+                image.classList.add('maximized');
+            }
+            function restoreImage(image) {
+                image.classList.remove('maximized');
+            }
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    if (image.classList.contains('maximized')) {
+                        restoreImage(image);
+                    } else {
+                        maximizeImage(image);
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
