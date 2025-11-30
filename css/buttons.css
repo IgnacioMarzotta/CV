@@ -50,13 +50,14 @@
 }
 .button-flip3d-vertical1 .front {
   transform: translateZ(22.5px);
-  background-image: linear-gradient(90deg, #000, #3c3c3c);
+  background-color: #3c3c3c;
+  text-align: center;
 }
 .button-flip3d-vertical1 .back {
   -webkit-transform: rotateX(90deg) translateZ(22.5px);
   -ms-transform: rotateX(90deg) translateZ(22.5px);
   transform: rotateX(90deg) translateZ(22.5px);
-  background-image: linear-gradient(90deg, #000, #3c3c3c);
+  background-color: #3c3c3c;
 }
 .button-flip3d-vertical1:hover .flipper-flip3d-vertical1 {
   transform: rotateX(-90deg);

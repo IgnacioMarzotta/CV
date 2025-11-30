@@ -220,19 +220,19 @@ a:focus
 }
 #header 
 {
-    height: 170px;
+    height: 190px;
     border-bottom: 1px solid #403F44;
 }
 .header_logotype_container 
 {
     width: 230px;
-    height: 170px;
+    height: 190px;
     border-right: 1px solid #403F44;
     float: left;
 }
 .header_menu_container 
 {
-    height: 170px;
+    height: 190px;
     width: 639px;
     float: left;
 }
@@ -375,6 +375,15 @@ a:focus
 {
     width: 230px;
 }
+.hello_content p
+{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 15px;
+}
+
 .contact_details_content h2 + p.purple
 {
     margin-top: 10px;
